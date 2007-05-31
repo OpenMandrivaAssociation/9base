@@ -7,7 +7,7 @@ Group: System/Base
 URL: http://wmi.berlios.de/
 Source: http://wmi.modprobe.de/snaps/9base-%version.tar.bz2
 BuildRoot: %{_tmppath}/root-%{name}-%{version}
-BuildRequires: gcc
+BuildRequires: gcc, glibc-devel
 
 %description
 9base is a port of following original Plan 9 userland tools to Unix:
