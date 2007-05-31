@@ -2,7 +2,7 @@ Summary: 9base is a port of following original Plan 9 userland tools to Unix
 Name: 9base
 Version: 20051114
 License: MIT
-Release: %mkrel 3
+Release: %mkrel 4
 Group: System/Base
 URL: http://wmi.berlios.de/
 Source: http://wmi.modprobe.de/snaps/9base-%version.tar.bz2
@@ -10,7 +10,9 @@ BuildRoot: %{_tmppath}/root-%{name}-%{version}
 BuildRequires: gcc
 
 %description
-9base is a port of following original Plan 9 userland tools to Unix
+9base is a port of following original Plan 9 userland tools to Unix:
+awk basename bc cat cleanname date echo grep rc sed seq sleep sort
+tee test touch tr uniq
 
 %prep
 %setup -q -n 9base-%version
@@ -41,6 +43,10 @@ do
         mv ${man} ${mans}9.1
 done
 
+%post
+echo "
+if you want to use 9base, please add %{_bindir}/9 to your path:
+export PATH=\$PATH:%{_bindir}/9"
 
 %clean
 %{__rm} -rf ${buildroot}
