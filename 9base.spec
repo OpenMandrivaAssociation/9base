@@ -2,7 +2,7 @@ Summary: 9base is a port of following original Plan 9 userland tools to Unix
 Name: 9base
 Version: 20051114
 License: MIT
-Release: %mkrel 4
+Release: %mkrel 5
 Group: System/Base
 URL: http://wmi.berlios.de/
 Source: http://wmi.modprobe.de/snaps/9base-%version.tar.bz2
