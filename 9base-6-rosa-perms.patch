@@ -1,0 +1,65 @@
+Index: 9base-6/std.mk
+===================================================================
+--- 9base-6.orig/std.mk
++++ 9base-6/std.mk
+@@ -17,7 +17,7 @@ install-default: ${TARG}
+ 	@chmod 755 ${DESTDIR}${PREFIX}/bin/${TARG}
+ 	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
+ 	@cp -f ${MANFILE} ${DESTDIR}${MANPREFIX}/man1
+-	@chmod 444 ${DESTDIR}${MANPREFIX}/man1/${MANFILE}
++	@chmod 644 ${DESTDIR}${MANPREFIX}/man1/${MANFILE}
+ 
+ uninstall: pre-uninstall
+ 	rm -f ${DESTDIR}${PREFIX}/bin/${TARG}
+Index: 9base-6/diff/Makefile
+===================================================================
+--- 9base-6.orig/diff/Makefile
++++ 9base-6/diff/Makefile
+@@ -17,7 +17,7 @@ install: ${TARG}
+ 	@chmod 755 ${DESTDIR}${PREFIX}/bin/${TARG}
+ 	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
+ 	@cp -f ${MANFILES} ${DESTDIR}${MANPREFIX}/man1
+-	@chmod 444 ${DESTDIR}${MANPREFIX}/man1/${MANFILES}
++	@chmod 644 ${DESTDIR}${MANPREFIX}/man1/${MANFILES}
+ 
+ uninstall:
+ 	rm -f ${DESTDIR}${PREFIX}/bin/${TARG}
+Index: 9base-6/sam/Makefile
+===================================================================
+--- 9base-6.orig/sam/Makefile
++++ 9base-6/sam/Makefile
+@@ -19,7 +19,7 @@ install: ${TARG}
+ 	@chmod 755 ${DESTDIR}${PREFIX}/bin/${TARG}
+ 	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
+ 	@cp -f ${MANFILES} ${DESTDIR}${MANPREFIX}/man1
+-	@chmod 444 ${DESTDIR}${MANPREFIX}/man1/${MANFILES}
++	@chmod 644 ${DESTDIR}${MANPREFIX}/man1/${MANFILES}
+ 
+ uninstall:
+ 	rm -f ${DESTDIR}${PREFIX}/bin/${TARG}
+Index: 9base-6/yacc.mk
+===================================================================
+--- 9base-6.orig/yacc.mk
++++ 9base-6/yacc.mk
+@@ -20,7 +20,7 @@ install: ${TARG}
+ 	@chmod 755 ${DESTDIR}${PREFIX}/bin/${TARG}
+ 	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
+ 	@cp -f ${MANFILES} ${DESTDIR}${MANPREFIX}/man1
+-	@chmod 444 ${DESTDIR}${MANPREFIX}/man1/${MANFILES}
++	@chmod 644 ${DESTDIR}${MANPREFIX}/man1/${MANFILES}
+ 
+ uninstall:
+ 	rm -f ${DESTDIR}${PREFIX}/bin/${TARG}
+Index: 9base-6/rc/Makefile
+===================================================================
+--- 9base-6.orig/rc/Makefile
++++ 9base-6/rc/Makefile
+@@ -31,7 +31,7 @@ install: ${TARG}
+ 	@chmod 755 ${DESTDIR}${PREFIX}/bin/${TARG}
+ 	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
+ 	@cp -f ${MANFILES} ${DESTDIR}${MANPREFIX}/man1
+-	@chmod 444 ${DESTDIR}${MANPREFIX}/man1/${MANFILES}
++	@chmod 644 ${DESTDIR}${MANPREFIX}/man1/${MANFILES}
+ 	@mkdir -p ${DESTDIR}${PREFIX}/etc
+ 	@cp -f rcmain ${DESTDIR}${PREFIX}/etc
+ 	@chmod 755 ${DESTDIR}${PREFIX}/etc/rcmain
