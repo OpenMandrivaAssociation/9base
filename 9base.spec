@@ -2,7 +2,7 @@ Summary: A port of following original Plan 9 userland tools to Unix
 Name: 9base
 Version: 6
 License: MIT and Lucent Public License
-Release: 1
+Release: 2
 Group: System/Base
 URL: http://tools.suckless.org/9base
 Source0: http://dl.suckless.org/tools/%{name}-%{version}.tar.gz
