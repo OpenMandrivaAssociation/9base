@@ -1,2 +1,6 @@
-
+addFilter("E: statically-linked-binary")
 addFilter("E: subdir-in-bin")
+addFilter("E: non-executable-script")
+addFilter("W: script-without-shebang")
+addFilter("W: only-non-binary-in-usr-lib")
+addFilter("W: not-standard-release-extension")
