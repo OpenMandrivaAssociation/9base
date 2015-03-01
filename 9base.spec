@@ -1,3 +1,5 @@
+%define debug_package	%{nil}
+
 Summary: A port of following original Plan 9 userland tools to Unix
 Name: 9base
 Version: 6
