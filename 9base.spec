@@ -6,7 +6,7 @@ Version: 6
 License: MIT and Lucent Public License
 Release: 2
 Group: System/Base
-URL: http://tools.suckless.org/9base
+URL: https://tools.suckless.org/9base
 Source0: http://dl.suckless.org/tools/%{name}-%{version}.tar.gz
 Source1: %{name}.rpmlintrc
 Patch0: 9base-6-rosa-perms.patch
